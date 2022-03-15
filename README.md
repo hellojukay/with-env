@@ -1,4 +1,6 @@
 # with-proxy
+[![check](https://github.com/hellojukay/with-env/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/hellojukay/with-env/actions/workflows/go.yml)
+
 通过 .env 文件命令注入环境变量, 会覆盖系统自带的环境变量
 
 1. ~/.env
