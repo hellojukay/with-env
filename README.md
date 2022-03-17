@@ -24,3 +24,6 @@ with-env git clone ...
 ```
 go install github.com/hellojukay/with-env@latest
 ```
+
+# Download
+[https://github.com/hellojukay/with-env/releases](https://github.com/hellojukay/with-env/releases)
