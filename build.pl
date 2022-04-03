@@ -11,7 +11,8 @@ sub command_exsits {
 
 $ENV{CGO_ENABLED} = 0;
 if(command_exsits('gox')) {
-    print("[INFO] gox command found , now run gox build.\n");
+    print("[INFO] gox command found , go install github.com/mitchellh/gox@latest .\n");
+    system("go install github.com/mitchellh/gox@latest")
     my $arch="darwin/arm64 darwin/amd64 linux/386 linux/amd64 windows/amd64 windows/386";
     system("gox	-osarch=\"$arch\"  -output=\"dist/{{.Dir}}_{{.OS}}_{{.Arch}}\"");
 } else {
