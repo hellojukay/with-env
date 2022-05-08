@@ -16,7 +16,7 @@ jobs:
     - name: build
       run: |
         export PATH=$PATH:$(go env GOPATH)/bin
-        go get github.com/mitchellh/gox
+        go install github.com/mitchellh/gox@latest
         mkdir dist
         perl build.pl
         ls -al dist/
