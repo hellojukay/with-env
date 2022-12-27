@@ -18,7 +18,7 @@ jobs:
         export PATH=$PATH:$(go env GOPATH)/bin
         go install github.com/mitchellh/gox@latest
         mkdir dist
-        perl build.pl
+        perl .github/build.pl
         ls -al dist/
     - name: Upload binaries to release
       uses: svenstaro/upload-release-action@v2
