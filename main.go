@@ -39,6 +39,7 @@ func loadEnv(files ...string) {
 	}
 
 }
+
 func main() {
 	c := exec.Command(os.Args[1], os.Args[2:]...)
 	c.Stderr = os.Stderr
