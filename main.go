@@ -44,6 +44,7 @@ func main() {
 	c := exec.Command(os.Args[1], os.Args[2:]...)
 	c.Stderr = os.Stderr
 	c.Stdout = os.Stdout
+	c.Stdin = os.Stdin
 	if err := c.Run(); err != nil {
 		fmt.Fprintf(os.Stderr, "%q\n", err)
 		os.Exit(1)
